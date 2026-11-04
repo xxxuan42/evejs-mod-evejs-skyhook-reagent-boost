@@ -1,0 +1,43 @@
+{
+  "author": {
+    "id": "au-mvdfee9me05u",
+    "keyId": "0f5102b5a107",
+    "name": "XUAN"
+  },
+  "category": "玩法",
+  "changelog": "",
+  "conflicts": [],
+  "delisted": false,
+  "description": "主权基建加强：所有行星的试剂采集量（每分钟产量）放大 20 倍、能量与劳动力放大 10 倍；轨道天钩产出周期改为 10 分钟、安全舱与冗余舱容量放大 100 倍；星系被占领后战略指数 30 分钟达到最高等级；卫星钻探（Metenox）每次产出改为 10 分钟、单周期产出 ×20、输出舱容量 ×20。仅服务端内存补丁，不改客户端文件、数据库与服务端源码。",
+  "displayName": "主权基建加强",
+  "downloadUrls": [
+    {
+      "mirror": "github",
+      "priority": 1,
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-skyhook-reagent-boost/releases/download/v1.2.0/evejs-skyhook-reagent-boost-1.2.0.zip"
+    }
+  ],
+  "evejsVersions": [
+    "261028.1"
+  ],
+  "featured": false,
+  "highlights": [],
+  "history": [],
+  "id": "evejs-skyhook-reagent-boost",
+  "publishedAt": "2026-11-04",
+  "readme": [
+    "- 容量在服务端以「单位」存储，客户端按试剂体积（如岩浆气 0.01 m³/单位）换算成 m³ 显示。\n- 能量 / 劳动力按行星定义原值 ×10（若服务端自身还有资源倍率，会与它叠加）。\n- 战略指数以星系被占领的时间（`claimTime`）为起点；通过 GM 工具把 `claimTime` 设为 0 的星系不会自动加速（仍可用 GM 指令直接设置天数）。\n- 卫星钻探每个 10 分钟周期仍按原版扣除 5 个燃料块 + 200 岩浆气，因此实际燃料消耗速率约为原来的 6 倍（客户端“消耗率 5/小时、200/小时”来自类型属性，不会随之改变）。\n- 兼容 EveJS `261028.1`；需要启动器提供注入总线（`globalThis.__evejsMods`）。\n- 加载前置检查：`lib/launcherGuard.js`（清单 `binding.enforce = observe`，只记日志）。"
+  ],
+  "repo": "https://github.com/xxxuan42/evejs-mod-evejs-skyhook-reagent-boost",
+  "requiresRestart": true,
+  "sha256": "93771254e979478c08c3775785756536a2fdce91cd82edb19c845033e7bebfbf",
+  "sizeBytes": 20416,
+  "tags": [
+    "主权",
+    "行星开发",
+    "天钩",
+    "战略指数",
+    "卫星钻探"
+  ],
+  "version": "1.2.0"
+}
