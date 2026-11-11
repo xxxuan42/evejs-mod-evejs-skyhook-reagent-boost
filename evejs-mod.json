@@ -14,24 +14,25 @@
     {
       "mirror": "github",
       "priority": 1,
-      "url": "https://github.com/xxxuan42/evejs-mod-evejs-skyhook-reagent-boost/releases/download/v1.3.10/evejs-skyhook-reagent-boost-1.3.10.zip"
+      "url": "https://github.com/xxxuan42/evejs-mod-evejs-skyhook-reagent-boost/releases/download/v1.3.11/evejs-skyhook-reagent-boost-1.3.11.zip"
     }
   ],
   "evejsVersions": [
-    "261028.1"
+    "261028.1",
+    "261108.1"
   ],
   "featured": false,
   "highlights": [],
   "history": [],
   "id": "evejs-skyhook-reagent-boost",
-  "publishedAt": "2026-11-09",
+  "publishedAt": "2026-11-11",
   "readme": [
     "- 容量在服务端以「单位」存储，客户端按试剂体积（如岩浆气 0.01 m³/单位）换算成 m³ 显示。\n- 能量 / 劳动力按行星定义原值 ×10（若服务端自身还有资源倍率，会与它叠加）。\n- 战略指数以星系被占领的时间（`claimTime`）为起点；通过 GM 工具把 `claimTime` 设为 0 的星系不会自动加速（仍可用 GM 指令直接设置天数）。\n- 卫星钻探燃料按周期折算并向上取整：每个 10 分钟周期扣 1 个燃料块 + 34 岩浆气，不留余数，折算每小时约 **6 个燃料块 + 204 岩浆气**；服务从离线转在线时一次性扣的 1,000 块燃料保持原版。\n- 结构权限补丁只影响 `OWNER_ACCESS` 类设置（17、36）；停靠、税率等 `DOCK_ACCESS` / `ALWAYS` 类设置仍按 Profile 规则判定。\n- 月矿时间轴只影响**新建**的开采计划；已存在的开采记录不回填，压缩比与碎裂延迟变化在下次开始开采时生效。\n- 兼容 EveJS `261028.1`；需要启动器提供注入总线（`globalThis.__evejsMods`）。\n- 加载前置检查：`lib/launcherGuard.js`（清单 `binding.enforce = observe`，只记日志）。"
   ],
   "repo": "https://github.com/xxxuan42/evejs-mod-evejs-skyhook-reagent-boost",
   "requiresRestart": true,
-  "sha256": "cd1817592360c11fd5e053025dbdfb403ea41a49dccd2621f6c6fa7edbf0e75a",
-  "sizeBytes": 39558,
+  "sha256": "673cb955b2a634a0737a29f4ab483207ae2a30423b39ed92a25bd5cfed459c70",
+  "sizeBytes": 39562,
   "tags": [
     "主权",
     "行星开发",
@@ -39,5 +40,5 @@
     "战略指数",
     "卫星钻探"
   ],
-  "version": "1.3.10"
+  "version": "1.3.11"
 }
